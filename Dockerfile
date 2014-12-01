@@ -10,6 +10,8 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 8084
 
+ENTRYPOINT "/tailon"
+
 CMD ["/tailon/run.sh"]
 
 # docker run -it --rm -p 8084:8084 --volumes-from boring_mcclintock ipedrazas/tailon
