@@ -10,7 +10,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 8084
 
-ENTRYPOINT "/tailon"
+WORKDIR "/tailon"
 
 CMD ["/tailon/run.sh"]
 
