@@ -14,4 +14,4 @@ WORKDIR "/tailon"
 
 CMD ["/tailon/run.sh"]
 
-# docker run -it --rm -p 8084:8084 --volumes-from boring_mcclintock ipedrazas/tailon
+# docker run -it --rm -p 8084:8084 -e "BASE=/PATH_TO_LOG /PATH_TO_LOG" --volumes-from CONTAINER_NAME ipedrazas/tailon 
